@@ -1,0 +1,184 @@
+.mil_logo{
+    /* logo */
+    
+    position: absolute;
+    width: 241px;
+    height: 116px;
+    left: 0px;
+    top: 0px;
+ }
+ .menu1{
+    /* 메뉴-교과과정 편집 */
+ 
+    position: absolute;
+    width: 241px;
+    height: 70px;
+    left: 0px;
+    top: 116px;
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+ 
+    padding-left: 55px;
+    color: #000000;
+ }
+ .menu1:hover{
+    background-color: #3462DC;
+    color: #FFFF;
+ }
+ .menu2{
+    /* 메뉴-과목편집 */
+ 
+    position: absolute;
+    width: 241px;
+    height: 70px;
+    left: 0px;
+    top: 186px;
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+ 
+    padding-left: 55px;
+    color: #000000;
+ }
+ .menu2:hover{
+    background-color: #3462DC;
+    color: #FFFF;
+ }
+ .menu3{
+    /* 메뉴-전문가영상관리 */
+ 
+    position: absolute;
+    width: 241px;
+    height: 70px;
+    left: 0px;
+    top: 256px;
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+ 
+    padding-left: 55px;
+    color: #000000;
+ }
+ .menu3:hover{
+    background-color: #3462DC;
+    color: #FFFF;
+ }
+ .menu4{
+    /* 메뉴-멘토관리 */
+ 
+    position: absolute;
+    width: 241px;
+    height: 70px;
+    left: 0px;
+    top: 326px;
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+ 
+    padding-left: 55px;
+    color: #000000;
+ }
+ .menu4:hover{
+    background-color: #3462DC;
+    color: #FFFF;
+ }
+ .menu5{
+    /* 메뉴-전체메일발송 */
+ 
+    position: absolute;
+    width: 241px;
+    height: 70px;
+    left: 0px;
+    top: 396px;
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+ 
+    padding-left: 55px;
+    color: #000000;
+ }
+ .menu5:hover{
+    background-color: #3462DC;
+    color: #FFFF;
+ }
+
+ .title1{
+    position: absolute;
+    width: 80px;
+    height: 56px;
+    left: 59px;
+    top: 20px;
+    margin:0px;
+    
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 47.0588px;
+    line-height: 56px;
+    
+    color: #3FA9F5;
+ }
+ .title2{
+    position: absolute;
+    width: 80px;
+    height: 56px;
+    left: 119px;
+    top: 20px;
+    margin:0px;
+    
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 47.0588px;
+    line-height: 56px;
+ 
+    color: #FBB03B;
+ }
+ .sub_title{
+    /* logo-관리자페이지 */
+ 
+    position: absolute;
+    width: 100px;
+    height: 12px;
+    left: 61px;
+    top: 60px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 9.93976px;
+    line-height: 12px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.4em;
+    
+    color: #3FA9F5;
+ }
