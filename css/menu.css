@@ -1,6 +1,6 @@
 .left_menu{
    background-color: white;
-   width: 18%;
+   width: 17%;
    height: 100%;
 }
 
@@ -11,7 +11,7 @@
    width: 16.87%;
    height: 100%;
    left: 4%;
-   top: -3%;
+   top: -5%;
    display: flex;
    flex-direction: column;
  }
@@ -27,8 +27,8 @@
    font-family: 'Pretendard';
    font-style: normal;
    font-weight: 700;
-   font-size: 3rem;
-   line-height: 3.5rem;
+   font-size: 2.4rem;
+   line-height: 5rem;
    
    color: #3FA9F5;
 }
@@ -38,8 +38,8 @@
    font-family: 'Pretendard';
    font-style: normal;
    font-weight: 700;
-   font-size: 3rem;
-   line-height: 3.5rem;
+   font-size: 2.4rem;
+   line-height: 5rem;
 
    color: #FBB03B;
 }
@@ -52,8 +52,8 @@
    font-family: 'Roboto';
    font-style: normal;
    font-weight: 600;
-   font-size: 0.65rem;
-   line-height: 0.5rem;
+   font-size: 0.2rem;
+   line-height: 0rem;
    /* identical to box height */
    
    letter-spacing: 0.4em;
@@ -65,9 +65,9 @@
     /* 메뉴-교과과정 편집 */
  
     position: absolute;
-    width: 13.8%;
+    width: 12.8%;
     height: 11%;
-    top: 116px;
+    top: 96px;
 
     font-family: 'Noto Sans';
     font-style: normal;
@@ -88,9 +88,9 @@
     /* 메뉴-과목편집 */
  
     position: absolute;
-    width: 13.8%;
+    width: 12.8%;
     height: 11%;
-    top: 186px;
+    top: 166px;
 
     font-family: 'Noto Sans';
     font-style: normal;
@@ -111,9 +111,9 @@
     /* 메뉴-전문가영상관리 */
  
     position: absolute;
-    width: 13.8%;
+    width: 12.8%;
     height: 11%;
-    top: 256px;
+    top: 236px;
 
     font-family: 'Noto Sans';
     font-style: normal;
@@ -134,9 +134,9 @@
     /* 메뉴-멘토관리 */
  
     position: absolute;
-    width: 13.8%;
+    width: 12.8%;
     height: 11%;
-    top: 326px;
+    top: 306px;
 
     font-family: 'Noto Sans';
     font-style: normal;
@@ -157,9 +157,9 @@
     /* 메뉴-전체메일발송 */
  
     position: absolute;
-    width: 13.8%;
+    width: 12.8%;
     height: 11%;
-    top: 396px;
+    top: 376px;
 
     font-family: 'Noto Sans';
     font-style: normal;

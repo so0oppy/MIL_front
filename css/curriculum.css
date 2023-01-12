@@ -19,7 +19,6 @@ body,html{
     justify-content: center;
     align-content: center;
     /* align-items: center; */
-   
     /* transform: matrix(1, 0, 0, -1, 0, 0);*/
 }
 
@@ -54,6 +53,12 @@ body,html{
     box-shadow: 0px 4px 12px rgb(0 0 0 / 5%);
     border-radius: 10px;
 }
+.content_top{
+   display: flex;
+   flex-direction: row;
+   height: 5%;
+   padding-top: 22px;
+}
 .content_box_title{
    /* 미디어 컨텐츠 교과과정 편집 */
 
@@ -70,6 +75,20 @@ body,html{
     display: flex;
     align-items: center;
     color: #000000;
+}
+.add_btn{
+   position: relative;
+   width: 10%;
+   top: 15%;
+   right: -16.2%;
+   border-radius: 0px;
+   color: #777777;
+   border-color: #777777;
+
+   font-family: 'Pretendard';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 0.8rem;
 }
 
 table{
@@ -96,6 +115,19 @@ tr:first-of-type > th {
 
 th,td{
    text-align:center;
+
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.76rem;
+   line-height: 2rem;
+}
+.action_bnt{
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.76rem;
+   line-height: 1rem;
 }
 
 button{
@@ -103,4 +135,37 @@ color:#3462DC;
 background: #FFFFFF;
 border: 1px solid #3462DC;
 border-radius: 4px;
+}
+
+/*----------팝업창------------*/
+
+.Modal{
+   /* display: none; */
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   top: 0;
+   width: 85%;
+   height: 100%;
+   margin-left: 17%;
+   overflow: auto;
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0, 0, 0, 0.12); /* Black w/ opacity */
+   z-index:100000000;
+   opacity: 90%;
+}
+.Modal .page{
+   /* 팝업창-흰색 */
+   width: 40%;
+   height: 60%;
+   padding: 1% 2% 1% 2%;
+   margin: 10% auto auto 26%;
+   justify-content: center;
+   align-items: center;
+   background-color: #FFFFFF;
+   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+   border-radius: 0px;
+}
+.Modal .close{
+   margin-left: 45% 
 }
