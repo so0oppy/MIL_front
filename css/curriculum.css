@@ -152,19 +152,19 @@ border-radius: 4px;
    background-color: rgb(0,0,0); /* Fallback color */
    background-color: rgba(0, 0, 0, 0.12); /* Black w/ opacity */
    z-index:100000000;
-   opacity: 90%;
+   opacity: 100%;
 }
 .Modal .page{
    /* 팝업창-흰색 */
-   width: 40%;
+   width: 60%;
    height: 60%;
    padding: 1% 2% 1% 2%;
-   margin: 10% auto auto 26%;
+   margin: 10% auto auto 17%;
    justify-content: center;
    align-items: center;
    background-color: #FFFFFF;
    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
-   border-radius: 0px;
+   border-radius: 10px;
 }
 .Modal .close{
    margin-left: 45% 
