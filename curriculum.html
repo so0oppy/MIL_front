@@ -58,15 +58,69 @@
 
             <div class="Modal Modal_add" id="Modal_add">
                <div class="page">
+                  <span class="title">교과과정표 설정</span>
+                  <div class="content">
+                     <div>
+                        <span class="name">페이지 명</span>
+                        <input class="name" id="input" placeholder="보여질 페이지의 이름입니다 (ex: Game)" rows={1} type="text" />
+                     </div>
+                     <div>
+                        <span class="slug">페이지 슬러그</span>
+                        <input class="slug" id="input" placeholder="게시판 슬러그는 초기 설정값에서 변경할 수 없습니다" rows={1} type="text" />
+                     </div>
+                     <div>
+                        <span class="short-code">페이지 숏코드</span>
+                        <input class="short-code" id="input" placeholder="이 숏코드를 만든 Page에 붙여넣으면 교과과정표가 보입니다" rows={1} type="text" />
+                     </div>
+                     <div>
+                        <span class="mandatory">Mandatory</span>
 
+                        <span class="core">Core</span>
+
+                     </div>
+                     <div>
+                        <span class="support">Support</span>
+
+                        <span class="type">Type</span>
+
+                     </div>
+                     <div>
+                        <span class="major-details">Major details</span>
+                        <select class="selection">
+                           <option value="미디어컨텐츠 전공">미디어컨텐츠 전공</option>
+                           <option value="미디어컨텐츠 전공">미디어컨텐츠 전공</option>
+                           <option value="미디어컨텐츠 전공">미디어컨텐츠 전공</option>
+                           <option value="미디어컨텐츠 전공">미디어컨텐츠 전공</option>
+                        </select>
+                     </div>
+                  </div>
                </div>
                <div class="close" onclick="close_pop_add();">
                   <span class="close_btn">close</span>
                </div>
             </div>
-            <div>
-
+            <div class="Modal Modal_add" id="Modal_subject">
+               <div class="page">
+               </div>
+               <div class="close" onclick="close_pop_subject();">
+                  <span class="close_btn">close</span>
+               </div>
             </div>
+            <div class="Modal Modal_add" id="Modal_modify">
+               <div class="page">
+               </div>
+               <div class="close" onclick="close_pop_modify();">
+                  <span class="close_btn">close</span>
+               </div>
+            </div>
+            <div class="Modal Modal_add" id="Modal_enter">
+               <div class="page">
+               </div>
+               <div class="close" onclick="close_pop_enter();">
+                  <span class="close_btn">close</span>
+               </div>
+            </div>
+
          </div>
       </div>
 

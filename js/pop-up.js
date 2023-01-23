@@ -7,25 +7,25 @@ function close_pop_add(flag){
 };
 
 function open_pop_subject(flag){
-    $('#Modal_add').css('display', 'block');
+    $('#Modal_subject').css('display', 'block');
 };
 
-// function close_pop_subject(flag){
-//     $('#Modal_add').hide();
-// };
+function close_pop_subject(flag){
+    $('#Modal_subject').hide();
+};
 
 function open_pop_modify(flag){
-    $('#Modal_add').css('display', 'block');
+    $('#Modal_modify').css('display', 'block');
 };
 
-// function close_pop_modify(flag){
-//     $('#Modal_add').hide();
-// };
+function close_pop_modify(flag){
+    $('#Modal_modify').hide();
+};
 
 function open_pop_enter(flag){
-    $('#Modal_add').css('display', 'block');
+    $('#Modal_enter').css('display', 'block');
 };
 
-// function close_pop_modify(flag){
-//     $('#Modal_add').hide();
-// };
+function close_pop_enter(flag){
+    $('#Modal_enter').hide();
+};

@@ -140,7 +140,7 @@ border-radius: 4px;
 /*----------팝업창------------*/
 
 .Modal{
-   /* display: none; */
+   display: none;
    position: fixed;
    z-index: 1;
    left: 0;
@@ -168,4 +168,105 @@ border-radius: 4px;
 }
 .Modal .close{
    margin-left: 45% 
+}
+
+.Modal_add .page .title{
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.95rem;
+   line-height: 2rem;
+   display: flex;
+   align-items: center;
+   color: #000000;
+}
+.Modal_add .page .content{
+   
+}
+.Modal_add .page .content .name{
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.76rem;
+   line-height: 2rem;
+   align-items: center;
+   color: #000000;
+}
+.Modal_add .page .content #input{
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.56rem;
+   line-height: 1rem;
+   align-items: center;
+   color: #A4A4A4;
+}
+.Modal_add .page .content .slug{
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.76rem;
+   line-height: 2rem;
+   align-items: center;
+   color: #000000;
+}
+.Modal_add .page .content .slug #input{
+   
+}
+.Modal_add .page .content .short-code{
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.76rem;
+   line-height: 2rem;
+   align-items: center;
+   color: #000000;
+}
+.Modal_add .page .content .short-code #input{
+   
+}
+.Modal_add .page .content .mandatory{
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.76rem;
+   line-height: 2rem;
+   align-items: center;
+   color: #000000;
+}
+.Modal_add .page .content .core{
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.76rem;
+   line-height: 2rem;
+   align-items: center;
+   color: #000000;
+}
+.Modal_add .page .content .support{
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.76rem;
+   line-height: 2rem;
+   align-items: center;
+   color: #000000;
+}
+.Modal_add .page .content .type{
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.76rem;
+   line-height: 2rem;
+   align-items: center;
+   color: #000000;
+}
+.Modal_add .page .content .major-details{
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.76rem;
+   line-height: 2rem;
+   align-items: center;
+   color: #000000;
 }
