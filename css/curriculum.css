@@ -157,9 +157,9 @@ border-radius: 4px;
 .Modal .page{
    /* 팝업창-흰색 */
    width: 60%;
-   height: 60%;
+   height: 70%;
    padding: 1% 2% 1% 2%;
-   margin: 10% auto auto 17%;
+   margin: 7% auto auto 17%;
    justify-content: center;
    align-items: center;
    background-color: #FFFFFF;
@@ -180,9 +180,25 @@ border-radius: 4px;
    align-items: center;
    color: #000000;
 }
-.Modal_add .page .content{
-   
-}
+
+/*---------------------------------------------*/
+
+.Modal_add .page .content #input{
+   width: 272.5px;
+   font-size: 40px;
+   background-color: transparent;
+   border: none;
+   border-bottom: #000000 1px solid;
+
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.56rem;
+   line-height: 1rem;
+   align-items: center;
+   color: #A4A4A4;
+ }
+
 .Modal_add .page .content .name{
    font-family: 'Noto Sans';
    font-style: normal;
@@ -191,16 +207,13 @@ border-radius: 4px;
    line-height: 2rem;
    align-items: center;
    color: #000000;
+
+   padding-bottom: 10px;
 }
-.Modal_add .page .content #input{
-   font-family: 'Noto Sans';
-   font-style: normal;
-   font-weight: 500;
-   font-size: 0.56rem;
-   line-height: 1rem;
-   align-items: center;
-   color: #A4A4A4;
+.Modal_add .page .content .name #input{
+   margin-left: 50px;
 }
+
 .Modal_add .page .content .slug{
    font-family: 'Noto Sans';
    font-style: normal;
@@ -209,9 +222,11 @@ border-radius: 4px;
    line-height: 2rem;
    align-items: center;
    color: #000000;
+
+   padding-bottom: 10px;
 }
 .Modal_add .page .content .slug #input{
-   
+   margin-left: 26px;
 }
 .Modal_add .page .content .short-code{
    font-family: 'Noto Sans';
@@ -221,10 +236,24 @@ border-radius: 4px;
    line-height: 2rem;
    align-items: center;
    color: #000000;
+
+   padding-bottom: 10px;
 }
 .Modal_add .page .content .short-code #input{
-   
+   margin-left: 26px;
 }
+
+/*----------------------------------------------*/
+
+.Modal_add .page .content .row1{
+   display: flex;
+   padding-bottom: 10px;
+}
+.Modal_add .page .content .row2{
+   display: flex;
+   padding-bottom: 10px;
+}
+
 .Modal_add .page .content .mandatory{
    font-family: 'Noto Sans';
    font-style: normal;
@@ -234,6 +263,86 @@ border-radius: 4px;
    align-items: center;
    color: #000000;
 }
+.Modal_add .page .content .mandatory-color{
+   width: 205px;
+   margin-left: 50px;
+}
+.Modal_add .page .content .mandatory-color .square1{
+   width: 20px;
+   height: 20px;
+   background: #D9D9D9;
+}
+.Modal_add .page .content .mandatory-color #code1{
+   width: 51px;
+   height: 16px;
+
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.57rem;
+   line-height: 1rem;
+   display: flex;
+   align-items: center;
+   color: #000000;
+
+   padding-left: 7px;
+}
+.Modal_add .page .content .mandatory-color #explain1{
+   width: 205px;
+   height: 16px;
+
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.57rem;
+   line-height: 1rem;
+   display: flex;
+   align-items: center;
+   color: #A4A4A4;
+
+   padding-top: 3px;
+   padding-bottom: 3px;
+}
+
+.Modal_add .page .content .mandatory-color .square2{
+   width: 20px;
+   height: 20px;
+   background: #6D6E71;
+}
+.Modal_add .page .content .mandatory-color #code2{
+   width: 51px;
+   height: 16px;
+
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.57rem;
+   line-height: 1rem;
+   display: flex;
+   align-items: center;
+   color: #000000;
+
+   padding-left: 7px;
+}
+.Modal_add .page .content .mandatory-color #explain2{
+   width: 205px;
+   height: 16px;
+
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.57rem;
+   line-height: 1rem;
+   display: flex;
+   align-items: center;
+   color: #A4A4A4;
+
+   padding-top: 3px;
+   padding-bottom: 3px;
+}
+
+/*----------------------------------------------*/
+
 .Modal_add .page .content .core{
    font-family: 'Noto Sans';
    font-style: normal;
@@ -243,6 +352,86 @@ border-radius: 4px;
    align-items: center;
    color: #000000;
 }
+
+.Modal_add .page .content .core-color{
+   width: 205px;
+   margin-left: 50px;
+}
+.Modal_add .page .content .core-color .square1{
+   width: 20px;
+   height: 20px;
+   background: #F8AD40;
+}
+.Modal_add .page .content .core-color #code1{
+   width: 51px;
+   height: 16px;
+
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.57rem;
+   line-height: 1rem;
+   display: flex;
+   align-items: center;
+   color: #000000;
+
+   padding-left: 7px;
+}
+.Modal_add .page .content .core-color #explain1{
+   width: 205px;
+   height: 16px;
+
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.57rem;
+   line-height: 1rem;
+   display: flex;
+   align-items: center;
+   color: #A4A4A4;
+
+   padding-top: 3px;
+   padding-bottom: 3px;
+}
+.Modal_add .page .content .core-color .square2{
+   width: 20px;
+   height: 20px;
+   background: #F4911E;
+}
+.Modal_add .page .content .core-color #code2{
+   width: 51px;
+   height: 16px;
+
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.57rem;
+   line-height: 1rem;
+   display: flex;
+   align-items: center;
+   color: #000000;
+
+   padding-left: 7px;
+}
+.Modal_add .page .content .core-color #explain2{
+   width: 205px;
+   height: 16px;
+
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.57rem;
+   line-height: 1rem;
+   display: flex;
+   align-items: center;
+   color: #A4A4A4;
+
+   padding-top: 3px;
+   padding-bottom: 3px;
+}
+
+/*----------------------------------------------*/
+
 .Modal_add .page .content .support{
    font-family: 'Noto Sans';
    font-style: normal;
@@ -252,6 +441,86 @@ border-radius: 4px;
    align-items: center;
    color: #000000;
 }
+
+.Modal_add .page .content .support-color{
+   width: 205px;
+   margin-left: 66px;
+}
+.Modal_add .page .content .support-color .square1{
+   width: 20px;
+   height: 20px;
+   background: #FEEED6;
+}
+.Modal_add .page .content .support-color #code1{
+   width: 51px;
+   height: 16px;
+
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.57rem;
+   line-height: 1rem;
+   display: flex;
+   align-items: center;
+   color: #000000;
+
+   padding-left: 7px;
+}
+.Modal_add .page .content .support-color #explain1{
+   width: 205px;
+   height: 16px;
+
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.57rem;
+   line-height: 1rem;
+   display: flex;
+   align-items: center;
+   color: #A4A4A4;
+
+   padding-top: 3px;
+   padding-bottom: 3px;
+}
+.Modal_add .page .content .support-color .square2{
+   width: 20px;
+   height: 20px;
+   background: #FBCE8C;
+}
+.Modal_add .page .content .support-color #code2{
+   width: 51px;
+   height: 16px;
+
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.57rem;
+   line-height: 1rem;
+   display: flex;
+   align-items: center;
+   color: #000000;
+
+   padding-left: 7px;
+}
+.Modal_add .page .content .support-color #explain2{
+   width: 205px;
+   height: 16px;
+
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.57rem;
+   line-height: 1rem;
+   display: flex;
+   align-items: center;
+   color: #A4A4A4;
+
+   padding-top: 3px;
+   padding-bottom: 3px;
+}
+
+/*----------------------------------------------*/
+
 .Modal_add .page .content .type{
    font-family: 'Noto Sans';
    font-style: normal;
@@ -261,6 +530,25 @@ border-radius: 4px;
    align-items: center;
    color: #000000;
 }
+.Modal_add .page .content .type-sort{
+   margin-left: 46px;
+}
+.Modal_add .page .content .type-sort label{
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.57rem;
+   line-height: 1rem;
+   align-items: center;
+   color: #000000;
+}
+
+/*----------------------------------------------*/
+
+.Modal_add .page .content .row3{
+   display: flex;
+}
+
 .Modal_add .page .content .major-details{
    font-family: 'Noto Sans';
    font-style: normal;
@@ -269,4 +557,26 @@ border-radius: 4px;
    line-height: 2rem;
    align-items: center;
    color: #000000;
+}
+.Modal_add .page .content .select{
+   margin-left: 38px;
+   display: column;
+}
+.Modal_add .page .content .select .selection{
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.6rem;
+   line-height: 2rem;
+   align-items: center;
+   color: #000000;
+}
+.Modal_add .page .content .select span{
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.57rem;
+   line-height: 1rem;
+   align-items: center;
+   color: #A4A4A4;
 }
