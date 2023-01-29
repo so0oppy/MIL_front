@@ -1,3 +1,18 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Playfair+Display+SC:ital@1&display=swap');
+
+@font-face {
+   font-family: 'Pretendard-Regular';
+   src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+}
+
 body,html{
     margin:0px;
     padding:0px;
@@ -32,7 +47,7 @@ body,html{
     left: 20%;
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 900;
     font-size: 1.3rem;
     line-height: 3.5rem;
     display: flex;
@@ -67,7 +82,7 @@ body,html{
     height: 5%;
     left: 3.4%;
     top: 4%;
-    font-family: 'Noto Sans';
+    font-family: 'Noto Sans KR';
     font-style: normal;
     font-weight: 600;
     font-size: 0.95rem;
@@ -85,7 +100,7 @@ body,html{
    color: #777777;
    border-color: #777777;
 
-   font-family: 'Pretendard';
+   font-family: 'Pretendard-Regular';
    font-style: normal;
    font-weight: 400;
    font-size: 0.8rem;
@@ -105,9 +120,9 @@ tr:first-of-type > th {
    background: #F4F4F4;
    /* border:none; */
    /* 폰트적용필요 */
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.95rem;
    line-height: 2rem;
    align-items: center;
@@ -116,16 +131,16 @@ tr:first-of-type > th {
 th,td{
    text-align:center;
 
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.76rem;
    line-height: 2rem;
 }
 .action_bnt{
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.76rem;
    line-height: 1rem;
 }
@@ -170,10 +185,10 @@ border-radius: 4px;
    margin-left: 45% 
 }
 
-.Modal_add .page .title{
-   font-family: 'Noto Sans';
+.Modal .page .title{
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.95rem;
    line-height: 2rem;
    display: flex;
@@ -181,7 +196,7 @@ border-radius: 4px;
    color: #000000;
 }
 
-/*---------------------------------------------*/
+/*--------------추가하기 Modal-------------------------------*/
 
 .Modal_add .page .content #input{
    width: 272.5px;
@@ -190,9 +205,9 @@ border-radius: 4px;
    border: none;
    border-bottom: #000000 1px solid;
 
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.56rem;
    line-height: 1rem;
    align-items: center;
@@ -200,9 +215,9 @@ border-radius: 4px;
  }
 
 .Modal_add .page .content .name{
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.76rem;
    line-height: 2rem;
    align-items: center;
@@ -215,9 +230,9 @@ border-radius: 4px;
 }
 
 .Modal_add .page .content .slug{
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.76rem;
    line-height: 2rem;
    align-items: center;
@@ -229,9 +244,9 @@ border-radius: 4px;
    margin-left: 26px;
 }
 .Modal_add .page .content .short-code{
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.76rem;
    line-height: 2rem;
    align-items: center;
@@ -255,9 +270,9 @@ border-radius: 4px;
 }
 
 .Modal_add .page .content .mandatory{
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.76rem;
    line-height: 2rem;
    align-items: center;
@@ -276,9 +291,9 @@ border-radius: 4px;
    width: 51px;
    height: 16px;
 
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.57rem;
    line-height: 1rem;
    display: flex;
@@ -291,9 +306,9 @@ border-radius: 4px;
    width: 205px;
    height: 16px;
 
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.57rem;
    line-height: 1rem;
    display: flex;
@@ -313,9 +328,9 @@ border-radius: 4px;
    width: 51px;
    height: 16px;
 
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.57rem;
    line-height: 1rem;
    display: flex;
@@ -328,9 +343,9 @@ border-radius: 4px;
    width: 205px;
    height: 16px;
 
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.57rem;
    line-height: 1rem;
    display: flex;
@@ -344,9 +359,9 @@ border-radius: 4px;
 /*----------------------------------------------*/
 
 .Modal_add .page .content .core{
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.76rem;
    line-height: 2rem;
    align-items: center;
@@ -366,9 +381,9 @@ border-radius: 4px;
    width: 51px;
    height: 16px;
 
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.57rem;
    line-height: 1rem;
    display: flex;
@@ -381,9 +396,9 @@ border-radius: 4px;
    width: 205px;
    height: 16px;
 
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.57rem;
    line-height: 1rem;
    display: flex;
@@ -402,9 +417,9 @@ border-radius: 4px;
    width: 51px;
    height: 16px;
 
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.57rem;
    line-height: 1rem;
    display: flex;
@@ -417,9 +432,9 @@ border-radius: 4px;
    width: 205px;
    height: 16px;
 
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.57rem;
    line-height: 1rem;
    display: flex;
@@ -433,9 +448,9 @@ border-radius: 4px;
 /*----------------------------------------------*/
 
 .Modal_add .page .content .support{
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.76rem;
    line-height: 2rem;
    align-items: center;
@@ -455,9 +470,9 @@ border-radius: 4px;
    width: 51px;
    height: 16px;
 
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.57rem;
    line-height: 1rem;
    display: flex;
@@ -470,9 +485,9 @@ border-radius: 4px;
    width: 205px;
    height: 16px;
 
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.57rem;
    line-height: 1rem;
    display: flex;
@@ -491,9 +506,9 @@ border-radius: 4px;
    width: 51px;
    height: 16px;
 
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.57rem;
    line-height: 1rem;
    display: flex;
@@ -506,9 +521,9 @@ border-radius: 4px;
    width: 205px;
    height: 16px;
 
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.57rem;
    line-height: 1rem;
    display: flex;
@@ -522,9 +537,9 @@ border-radius: 4px;
 /*----------------------------------------------*/
 
 .Modal_add .page .content .type{
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.76rem;
    line-height: 2rem;
    align-items: center;
@@ -534,7 +549,7 @@ border-radius: 4px;
    margin-left: 46px;
 }
 .Modal_add .page .content .type-sort label{
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
    font-weight: 500;
    font-size: 0.57rem;
@@ -550,9 +565,9 @@ border-radius: 4px;
 }
 
 .Modal_add .page .content .major-details{
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.76rem;
    line-height: 2rem;
    align-items: center;
@@ -563,20 +578,111 @@ border-radius: 4px;
    display: column;
 }
 .Modal_add .page .content .select .selection{
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.6rem;
    line-height: 2rem;
    align-items: center;
    color: #000000;
 }
 .Modal_add .page .content .select span{
-   font-family: 'Noto Sans';
+   font-family: 'Noto Sans KR';
    font-style: normal;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 0.57rem;
    line-height: 1rem;
    align-items: center;
    color: #A4A4A4;
+}
+
+/*-----------------과목등록 Modal--------------------*/
+
+.Modal_subject .page{
+   /* 팝업창-흰색 */
+   width: 80%;
+   height: 80%;
+   padding: 1% 2% 1% 2%;
+   margin: 4% auto auto 8%;
+   justify-content: center;
+   align-items: center;
+   background-color: #FFFFFF;
+   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+   border-radius: 10px;
+}
+.Modal_subject .page .title{
+   height: 15px;
+   margin-top: 25px;
+}
+.Modal_subject .page .subtitle{
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 0.57rem;
+   line-height: 1rem;
+   align-items: center;
+   color: #A4A4A4;
+}
+.Modal_subject .page .subject-list table{
+   width: 90%;
+   height: 80%;
+   margin-left: -3.5%;
+   margin-top: 2%;
+}
+.Modal_subject .page .subject-list table tr th{
+   width: 102px;
+   height: 20px;
+   background: #F4F4F4;
+}
+.Modal_subject .page .subject-list .class_mark{
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 0.76rem;
+   line-height: 0rem;
+   text-align: center;
+   color: #000000;
+}
+.Modal_subject .page .subject-list table tr td{
+   width: 130px;
+   height: 30px;
+   border: 0.931223px solid #C2C2C2;
+   border-radius: 3.72489px;
+}
+.Modal_subject .page .subject-list table tr td span{
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 0.2rem;
+   line-height: 10%;
+   align-items: center;
+   text-align: center;
+   color: #000000;
+}
+
+
+/*-----------------------------------------*/
+.Modal_subject .page .subject-type{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-left: -40px;
+}
+.Modal_subject .page .subject-type .title{
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 0.95rem;
+   line-height: 2rem;
+   align-items: center;
+   color: #000000;
+}
+.Modal_subject .page .subject-type #Core{
+   font-family: 'Noto Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 0.76rem;
+   line-height: 2rem;
+   align-items: top;
+   color: #000000;
 }
