@@ -600,10 +600,10 @@ border-radius: 4px;
 
 .Modal_subject .page{
    /* 팝업창-흰색 */
-   width: 80%;
+   width: 85%;
    height: 80%;
    padding: 1% 2% 1% 2%;
-   margin: 4% auto auto 8%;
+   margin: 4% auto auto 5%;
    justify-content: center;
    align-items: center;
    background-color: #FFFFFF;
@@ -626,7 +626,7 @@ border-radius: 4px;
 .Modal_subject .page .subject-list table{
    width: 90%;
    height: 80%;
-   margin-left: -3.5%;
+   /* margin-left: -3.5%; */
    margin-top: 2%;
 }
 .Modal_subject .page .subject-list table tr th{
@@ -666,7 +666,6 @@ border-radius: 4px;
    display: flex;
    flex-direction: column;
    justify-content: center;
-   margin-left: -40px;
 }
 .Modal_subject .page .subject-type .title{
    font-family: 'Noto Sans KR';
