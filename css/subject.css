@@ -58,7 +58,7 @@ body,html{
 .row{
     display: flex;
 }
-.row .subject-list{
+.subject-list{
    /* 흰 바탕 */
    position: relative;
     left: 6.5%;
@@ -72,9 +72,9 @@ body,html{
     box-shadow: 0px 4px 12px rgb(0 0 0 / 5%);
     border-radius: 10px;
 }
-.row .subject-info{
+.subject-info{
     /* 흰 바탕 */
-    position: relative;
+    /* position: relative;
      left: 6.5%;
      width: 20%;
      height: 80%;
@@ -83,5 +83,5 @@ body,html{
      align-content: center;
      background: #FFFFFF;
      box-shadow: 0px 4px 12px rgb(0 0 0 / 5%);
-     border-radius: 10px;
+     border-radius: 10px; */
  }
