@@ -225,7 +225,7 @@ th,td{
    padding: 0.2rem;
 }
 
-.Modal_add .page .setting_table_wrap .mil_input{
+.mileditor_wrap .page .setting_table_wrap .mil_input{
    width: 272.5px;
    font-size: 40px;
    background-color: transparent;
@@ -241,7 +241,7 @@ th,td{
    color: #A4A4A4;
  }
 
-.Modal_add .page .setting_table_wrap .name{
+.mileditor_wrap .page .setting_table_wrap .name{
    font-family: 'Noto Sans KR';
    font-style: normal;
    font-weight: 400;
@@ -252,11 +252,11 @@ th,td{
 
    padding-bottom: 10px;
 }
-.Modal_add .page .setting_table_wrap .name .mil_input{
+.mileditor_wrap .page .setting_table_wrap .name .mil_input{
    margin-left: 50px;
 }
 
-.Modal_add .page .setting_table_wrap .slug{
+.mileditor_wrap .page .setting_table_wrap .slug{
    font-family: 'Noto Sans KR';
    font-style: normal;
    font-weight: 400;
@@ -267,10 +267,10 @@ th,td{
 
    padding-bottom: 10px;
 }
-.Modal_add .page .setting_table_wrap .slug .mil_input{
+.mileditor_wrap .page .setting_table_wrap .slug .mil_input{
    margin-left: 26px;
 }
-.Modal_add .page .setting_table_wrap .short-code{
+.mileditor_wrap .page .setting_table_wrap .short-code{
    font-family: 'Noto Sans KR';
    font-style: normal;
    font-weight: 400;
@@ -281,22 +281,22 @@ th,td{
 
    padding-bottom: 10px;
 }
-.Modal_add .page .setting_table_wrap .short-code .mil_input{
+.mileditor_wrap .page .setting_table_wrap .short-code .mil_input{
    margin-left: 26px;
 }
 
 /*----------------------------------------------*/
 
-.Modal_add .page .setting_table_wrap .row1{
+.mileditor_wrap .page .setting_table_wrap .row1{
    display: flex;
    padding-bottom: 10px;
 }
-.Modal_add .page .setting_table_wrap .row2{
+.mileditor_wrap .page .setting_table_wrap .row2{
    display: flex;
    padding-bottom: 10px;
 }
 
-.Modal_add .page .setting_table_wrap .mandatory{
+.mileditor_wrap .page .setting_table_wrap .mandatory{
    font-family: 'Noto Sans KR';
    font-style: normal;
    font-weight: 400;
@@ -305,15 +305,16 @@ th,td{
    align-items: center;
    color: #000000;
 }
-.Modal_add .page .setting_table_wrap .mandatory-color{
+.mileditor_wrap .page .setting_table_wrap .mandatory-color{
    width: 205px;
    margin-left: 50px;
 }
-.Modal_add .page .setting_table_wrap .mandatory-color .view_color{
+.mileditor_wrap .page .setting_table_wrap .mandatory-color .view_color{
    width: 20px;
    height: 20px;
+   border: 0.5px solid black;
 }
-.Modal_add .page .setting_table_wrap .mandatory-color .mil_input{
+.mileditor_wrap .page .setting_table_wrap .mandatory-color .mil_input{
    width: 51px;
    height: 16px;
 
@@ -328,7 +329,7 @@ th,td{
 
    padding-left: 7px;
 }
-.Modal_add .page .setting_table_wrap .mandatory-color #explain1{
+.mileditor_wrap .page .setting_table_wrap .mandatory-color #explain1{
    width: 205px;
    height: 16px;
 
@@ -345,11 +346,12 @@ th,td{
    padding-bottom: 3px;
 }
 
-.Modal_add .page .setting_table_wrap .mandatory-color .view_color{
+.mileditor_wrap .page .setting_table_wrap .mandatory-color .view_color{
    width: 20px;
    height: 20px;
+   border: 0.5px solid black;
 }
-.Modal_add .page .setting_table_wrap .mandatory-color .mil_input{
+.mileditor_wrap .page .setting_table_wrap .mandatory-color .mil_input{
    width: 51px;
    height: 16px;
 
@@ -364,7 +366,7 @@ th,td{
 
    padding-left: 7px;
 }
-.Modal_add .page .setting_table_wrap .mandatory-color #explain2{
+.mileditor_wrap .page .setting_table_wrap .mandatory-color #explain2{
    width: 205px;
    height: 16px;
 
@@ -383,7 +385,7 @@ th,td{
 
 /*----------------------------------------------*/
 
-.Modal_add .page .setting_table_wrap .core{
+.mileditor_wrap .page .setting_table_wrap .core{
    font-family: 'Noto Sans KR';
    font-style: normal;
    font-weight: 400;
@@ -393,15 +395,16 @@ th,td{
    color: #000000;
 }
 
-.Modal_add .page .setting_table_wrap .core-color{
+.mileditor_wrap .page .setting_table_wrap .core-color{
    width: 205px;
    margin-left: 50px;
 }
-.Modal_add .page .setting_table_wrap .core-color .view_color{
+.mileditor_wrap .page .setting_table_wrap .core-color .view_color{
    width: 20px;
    height: 20px;
+   border: 0.5px solid black;
 }
-.Modal_add .page .setting_table_wrap .core-color .mil_input{
+.mileditor_wrap .page .setting_table_wrap .core-color .mil_input{
    width: 51px;
    height: 16px;
 
@@ -416,7 +419,7 @@ th,td{
 
    padding-left: 7px;
 }
-.Modal_add .page .setting_table_wrap .core-color #explain1{
+.mileditor_wrap .page .setting_table_wrap .core-color #explain1{
    width: 205px;
    height: 16px;
 
@@ -432,11 +435,12 @@ th,td{
    padding-top: 3px;
    padding-bottom: 3px;
 }
-.Modal_add .page .setting_table_wrap .core-color .view_color{
+.mileditor_wrap .page .setting_table_wrap .core-color .view_color{
    width: 20px;
    height: 20px;
+   border: 0.5px solid black;
 }
-.Modal_add .page .setting_table_wrap .core-color .mil_input{
+.mileditor_wrap .page .setting_table_wrap .core-color .mil_input{
    width: 51px;
    height: 16px;
 
@@ -451,7 +455,7 @@ th,td{
 
    padding-left: 7px;
 }
-.Modal_add .page .setting_table_wrap .core-color #explain2{
+.mileditor_wrap .page .setting_table_wrap .core-color #explain2{
    width: 205px;
    height: 16px;
 
@@ -470,7 +474,7 @@ th,td{
 
 /*----------------------------------------------*/
 
-.Modal_add .page .setting_table_wrap .support{
+.mileditor_wrap .page .setting_table_wrap .support{
    font-family: 'Noto Sans KR';
    font-style: normal;
    font-weight: 400;
@@ -480,15 +484,16 @@ th,td{
    color: #000000;
 }
 
-.Modal_add .page .setting_table_wrap .support-color{
+.mileditor_wrap .page .setting_table_wrap .support-color{
    width: 205px;
    margin-left: 66px;
 }
-.Modal_add .page .setting_table_wrap .support-color .view_color{
+.mileditor_wrap .page .setting_table_wrap .support-color .view_color{
    width: 20px;
    height: 20px;
+   border: 0.5px solid black;
 }
-.Modal_add .page .setting_table_wrap .support-color .mil_input{
+.mileditor_wrap .page .setting_table_wrap .support-color .mil_input{
    width: 51px;
    height: 16px;
 
@@ -503,7 +508,7 @@ th,td{
 
    padding-left: 7px;
 }
-.Modal_add .page .setting_table_wrap .support-color #explain1{
+.mileditor_wrap .page .setting_table_wrap .support-color #explain1{
    width: 205px;
    height: 16px;
 
@@ -519,11 +524,12 @@ th,td{
    padding-top: 3px;
    padding-bottom: 3px;
 }
-.Modal_add .page .setting_table_wrap .support-color .view_color{
+.mileditor_wrap .page .setting_table_wrap .support-color .view_color{
    width: 20px;
    height: 20px;
+   border: 0.5px solid black;
 }
-.Modal_add .page .setting_table_wrap .support-color .mil_input{
+.mileditor_wrap .page .setting_table_wrap .support-color .mil_input{
    width: 51px;
    height: 16px;
 
@@ -538,7 +544,7 @@ th,td{
 
    padding-left: 7px;
 }
-.Modal_add .page .setting_table_wrap .support-color #explain2{
+.mileditor_wrap .page .setting_table_wrap .support-color #explain2{
    width: 205px;
    height: 16px;
 
@@ -557,7 +563,7 @@ th,td{
 
 /*----------------------------------------------*/
 
-.Modal_add .page .setting_table_wrap .type{
+.mileditor_wrap .page .setting_table_wrap .type{
    font-family: 'Noto Sans KR';
    font-style: normal;
    font-weight: 400;
@@ -566,10 +572,10 @@ th,td{
    align-items: center;
    color: #000000;
 }
-.Modal_add .page .setting_table_wrap .type-sort{
+.mileditor_wrap .page .setting_table_wrap .type-sort{
    margin-left: 46px;
 }
-.Modal_add .page .setting_table_wrap .type-sort label{
+.mileditor_wrap .page .setting_table_wrap .type-sort label{
    font-family: 'Noto Sans KR';
    font-style: normal;
    font-weight: 500;
@@ -578,7 +584,7 @@ th,td{
    align-items: center;
    color: #000000;
 }
-.Modal_add .page .setting_table_wrap .type-sort #explain1{
+.mileditor_wrap .page .setting_table_wrap .type-sort #explain1{
    width: 210px;
    height: 16px;
 
@@ -597,11 +603,11 @@ th,td{
 
 /*----------------------------------------------*/
 
-.Modal_add .page .setting_table_wrap .row3{
+.mileditor_wrap .page .setting_table_wrap .row3{
    display: flex;
 }
 
-.Modal_add .page .setting_table_wrap .major-details{
+.mileditor_wrap .page .setting_table_wrap .major-details{
    font-family: 'Noto Sans KR';
    font-style: normal;
    font-weight: 400;
@@ -610,11 +616,11 @@ th,td{
    align-items: center;
    color: #000000;
 }
-.Modal_add .page .setting_table_wrap .select{
+.mileditor_wrap .page .setting_table_wrap .select{
    margin-left: 38px;
    display: column;
 }
-.Modal_add .page .setting_table_wrap .select .selection{
+.mileditor_wrap .page .setting_table_wrap .select .selection{
    font-family: 'Noto Sans KR';
    font-style: normal;
    font-weight: 400;
@@ -623,7 +629,7 @@ th,td{
    align-items: center;
    color: #000000;
 }
-.Modal_add .page .setting_table_wrap .select span{
+.mileditor_wrap .page .setting_table_wrap .select span{
    font-family: 'Noto Sans KR';
    font-style: normal;
    font-weight: 400;
