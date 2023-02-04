@@ -67,14 +67,16 @@ body,html{
     background: #FFFFFF;
     box-shadow: 0px 4px 12px rgb(0 0 0 / 5%);
     border-radius: 10px;
+
+    overflow: auto;
 }
-.content_top{
+.admin_page_header{
    display: flex;
    flex-direction: row;
    height: 5%;
    padding-top: 22px;
 }
-.content_box_title{
+.admin_page_title{
    /* 미디어 컨텐츠 교과과정 편집 */
 
    position: relative;
@@ -91,25 +93,11 @@ body,html{
     align-items: center;
     color: #000000;
 }
-.add_btn{
-   position: relative;
-   width: 10%;
-   top: 15%;
-   right: -16.2%;
-   border-radius: 0px;
-   color: #777777;
-   border-color: #777777;
-
-   font-family: 'Pretendard-Regular';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 0.8rem;
-}
 
 table{
    position: relative;
    left: 3.4%;
-   top: 5%;
+   top: 2%;
    width: 93%;
    align-items: center;
    align-content: center;
@@ -137,19 +125,32 @@ th,td{
    font-size: 0.76rem;
    line-height: 2rem;
 }
-.action_bnt{
+.mil_btn{
    font-family: 'Noto Sans KR';
    font-style: normal;
    font-weight: 400;
    font-size: 0.76rem;
    line-height: 1rem;
-}
 
-button{
-color:#3462DC;
-background: #FFFFFF;
-border: 1px solid #3462DC;
-border-radius: 4px;
+   color:#3462DC;
+   background: #FFFFFF;
+   border: 1px solid #3462DC;
+   border-radius: 4px;
+}
+.mil_add_btn{
+   position: absolute;
+   width: 10%;
+   top: 5.5%;
+   right: 3.7%;
+   border-radius: 0px;
+   color: #777777;
+   border-color: #777777;
+
+   font-family: 'Pretendard-Regular';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 0.8rem;
+   padding: 0.2rem;
 }
 
 /*----------팝업창------------*/

@@ -19,42 +19,630 @@
     <script src="js/cil.js"></script>
 
     <script src="js/pop-up.js"></script>
+
+    <script type="text/javascript">
+      addLoadEvent = function(func){if(typeof jQuery!="undefined")jQuery(document).ready(func);else if(typeof wpOnload!='function'){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
+      var ajaxurl = '/wordpress/wp-admin/admin-ajax.php',
+         pagenow = 'toplevel_page_mileditor',
+         typenow = '',
+         adminpage = 'toplevel_page_mileditor',
+         thousandsSeparator = ',',
+         decimalPoint = '.',
+         isRtl = 0;
+   </script>
+   <script type="text/javascript">
+      window._wpemojiSettings = 
+      {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/",
+      "ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/",
+      "svgExt":".svg",
+      "source":{"concatemoji":"http:\/\/media-jobs.ajou.ac.kr\/wordpress\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6"}
+      };
+      !function(a,b,c){function d(a){
+            var c,d,e,f,g,h=b.createElement("canvas"),
+            i=h.getContext&&h.getContext("2d"),
+            j=String.fromCharCode;
+            if(!i||!i.fillText)return!1;
+            switch(i.textBaseline="top",i.font="600 32px Arial",a)
+            {
+               case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),
+                  !(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),
+                  i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),
+                  c=h.toDataURL(),
+                  i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),
+                  d=h.toDataURL(),c!==d);
+               case"diversity":return i.fillText(j(55356,57221),0,0),
+                  e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],
+                  i.fillText(j(55356,57221,55356,57343),0,0),
+                  e=i.getImageData(16,16,1,1).data,
+                  g=e[0]+","+e[1]+","+e[2]+","+e[3],
+                  f!==g;case"simple":return i.fillText(j(55357,56835),0,0),
+                  0!==i.getImageData(16,16,1,1).data[0];
+               case"unicode8":return i.fillText(j(55356,57135),0,0),
+                  0!==i.getImageData(16,16,1,1).data[0];
+               case"unicode9":return i.fillText(j(55358,56631),0,0),
+                  0!==i.getImageData(16,16,1,1).data[0]}return!1
+      }
+      function e(a){
+         var c=b.createElement("script");
+         c.src=a,
+         c.type="text/javascript",
+         b.getElementsByTagName("head")[0].appendChild(c)
+      }
+      var f,g,h,i;
+      for(
+         i=Array("simple","flag","unicode8","diversity","unicode9"),
+         c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++
+      )c.supports[i[h]]=d(i[h]),
+      c.supports.everything=c.supports.everything&&c.supports[i[h]],
+      "flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);
+      c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,
+      c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},
+      c.supports.everything||(g=function(){c.readyCallback()},
+      b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),
+      a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),
+      b.attachEvent("onreadystatechange",
+      function(){
+         "complete"===b.readyState&&c.readyCallback()
+      })),f=c.source||{},
+      f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+   </script>
+   <script>
+		if ( window.history.replaceState ) {
+			window.history.replaceState( null, null, document.getElementById( 'wp-admin-canonical' ).href + window.location.hash );
+		}
+	</script>
+   <script type="text/javascript">var _wpColorScheme = {"icons":{"base":"#82878c","focus":"#00a0d2","current":"#fff"}};</script>
+   
+<script type='text/javascript'>
+/* <![CDATA[ */
+var userSettings = {"url":"\/wordpress\/","uid":"1","time":"1675492374","secure":""};/* ]]> */
+</script>
+<script type='text/javascript' src='http://media-jobs.ajou.ac.kr/wordpress/wp-admin/load-scripts.php?c=0&amp;load%5B%5D=jquery-core,jquery-migrate,utils&amp;ver=4.6'></script>
+<script type='text/javascript' src='http://media-jobs.ajou.ac.kr/wordpress/wp-content/plugins/mil_editor/backend/js/admin.script.js?ver=4.6'></script>
+<script type='text/javascript' src='http://media-jobs.ajou.ac.kr/wordpress/wp-content/plugins/mil_editor/backend/js/admin.industry.script.js?ver=4.6'></script>
+<script type='text/javascript' src='http://media-jobs.ajou.ac.kr/wordpress/wp-content/plugins/mil_editor/backend/js/admin.mentor.script.js?ver=4.6'></script>
+<script type='text/javascript' src='http://media-jobs.ajou.ac.kr/wordpress/wp-content/plugins/kboard/pages/cosmosfarm-apis.js?ver=5.2'></script>
+
 </head>
 <!-- <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>   -->
 <body>
+   <script type="text/javascript">
+      document.body.className = document.body.className.replace('no-js','js');
+   </script>
+   
+      <script type="text/javascript">
+         (function() {
+            var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+   
+            request = true;
+   
+            b[c] = b[c].replace( rcs, ' ' );
+            b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+         }());
+      </script>
       
       <div class="main_contents">
          <p class="main_contents_title">교과과정 편집</p>
          <div class="content_box">
-            <div class="content_top">
-               <p class="content_box_title">디지털미디어 교과과정 편집</p>
-               <button class="add_btn" type="button" onclick="open_pop_add();" style="cursor: pointer;" >+ 추가하기</button>
+
+            <div class="admin_page_header">
+               <p class="admin_page_title">디지털미디어 교과과정 편집</p>
+               <div class="admin_page_tool_bar">
+                  <button class="mil_btn mil_add_btn" type="button" onclick="open_pop_add();" style="cursor: pointer;" >+ 추가하기</button>
+               </div>
             </div>
 
-            <table>
-               <tr>
-                  <th>ID</th>
-                  <th>페이지 이름</th>
-                  <th>Shortcode</th>
-                  <th>항목</th>
-                  <th>Actions</th>
-               </tr>
-               <tr>
-                  <td>701</td>
-                  <td>디지털디자이너</td>
-                  <td>milpage dg_dg</td>
-                  <td>
-                     <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
-                     <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
-                  </td>
-                  <td>
-                     <button class="action_bnt" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
-                     <button class="action_bnt" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
-                     <button class="action_bnt" type="button" onclick="open_pop_delete();" style="cursor: pointer;">삭제</button>
-                     <button class="action_bnt" type="button" onclick="open_pop_enter();" style="cursor: pointer;">페이지 보기</button>
-                  </td>
-               </tr>
-            </table>
+            <div class="admin_page_content">
+               <table>
+                  <thead>
+                     <tr>
+                        <th>ID</th>
+                        <th>페이지 이름</th>
+                        <th>Shortcode</th>
+                        <th>항목</th>
+                        <th>Actions</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>701</td>
+                        <td>디지털디자이너</td>
+                        <td>milpage dg_dg</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="701"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/%eb%94%94%ec%a7%80%ed%84%b8%eb%94%94%ec%9e%90%ec%9d%b4%eb%84%88/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>700</td>
+                        <td>서비스경험디자이너</td>
+                        <td>milpage dg_se</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="700"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/%ec%8b%9c%ea%b0%81%eb%8b%a4%ec%a7%80%ec%9d%b4%eb%84%88/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>699</td>
+                        <td>시각디자이너</td>
+                        <td>milpage dg_see</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="699"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/%ec%8b%9c%ea%b0%81%eb%8b%a4%ec%a7%80%ec%9d%b4%eb%84%88/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>698</td>
+                        <td>스마트문화앱콘텐츠제작</td>
+                        <td>milpage gm_app</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="698"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/%ec%8a%a4%eb%a7%88%ed%8a%b8%eb%ac%b8%ed%99%94%ec%95%b1%ec%bd%98%ed%85%90%ec%b8%a0%ec%a0%9c%ec%9e%91/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>697</td>
+                        <td>게임프로그래머</td>
+                        <td>milpage gm_pro</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="697"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/%ea%b2%8c%ec%9e%84%ea%b8%b0%ed%9a%8d%ec%9e%90/%ea%b2%8c%ec%9e%84%ed%94%84%eb%a1%9c%ea%b7%b8%eb%9e%98%eb%a8%b8/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>696</td>
+                        <td>게임그래픽디자이너</td>
+                        <td>milpage gm_graphic</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="696"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/%ea%b2%8c%ec%9e%84%ea%b7%b8%eb%9e%98%ed%94%bd%eb%94%94%ec%9e%90%ec%9d%b4%eb%84%88/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>693</td>
+                        <td>게임기획자</td>
+                        <td>milpage gm_plan</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="693"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/%ea%b2%8c%ec%9e%84%ea%b8%b0%ed%9a%8d%ec%9e%90/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>687</td>
+                        <td>게임클라이언트개발자</td>
+                        <td>milpage vc_game_client</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="687"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/%ea%b2%8c%ec%9e%84%ed%81%b4%eb%9d%bc%ec%9d%b4%ec%96%b8%ed%8a%b8%ea%b0%9c%eb%b0%9c%ec%9e%90/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>681</td>
+                        <td>영상테크니컬디렉터</td>
+                        <td>milpage vc_filme_director</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="681"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/%ec%98%81%ec%83%81%ed%85%8c%ed%81%ac%eb%8b%88%ec%bb%ac%eb%94%94%eb%a0%89%ed%84%b0/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>678</td>
+                        <td>3D그래픽스</td>
+                        <td>milpage vc_graphics</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="678"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/3d%ea%b7%b8%eb%9e%98%ed%94%bd%ec%8a%a4/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>673</td>
+                        <td>데이터사이언스대학원</td>
+                        <td>milpage data_graduate</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="673"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/%eb%8d%b0%ec%9d%b4%ed%84%b0%ec%82%ac%ec%9d%b4%ec%96%b8%ec%8a%a4%eb%8c%80%ed%95%99%ec%9b%90/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>669</td>
+                        <td>데이터엔지니어</td>
+                        <td>milpage data_engineer</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="669"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/%eb%8d%b0%ec%9d%b4%ed%84%b0%ec%97%94%ec%a7%80%eb%8b%88%ec%96%b4/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>667</td>
+                        <td>데이터사이언티스트</td>
+                        <td>milpage data_scientist</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="667"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/%eb%8d%b0%ec%9d%b4%ed%84%b0%ec%82%ac%ec%9d%b4%ec%96%b8%ed%8b%b0%ec%8a%a4%ed%8a%b8/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>662</td>
+                        <td>모션그래픽디자이너</td>
+                        <td>milpage df_motion</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="662"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/%eb%aa%a8%ec%85%98%ea%b7%b8%eb%9e%98%ed%94%bd%eb%94%94%ec%9e%90%ec%9d%b4%eb%84%88/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>658</td>
+                        <td>제작PD</td>
+                        <td>milpage df_pd</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="658"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/%ec%a0%9c%ec%9e%91pd/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>654</td>
+                        <td>브랜드디자인</td>
+                        <td>milpage df_brand</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="654"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/%eb%b8%8c%eb%9e%9c%eb%93%9c%eb%94%94%ec%9e%90%ec%9d%b8/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>507</td>
+                        <td>Media Contents</td>
+                        <td>milpage media_contents</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="507"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/media_contents/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>177</td>
+                        <td>휴먼인터랙션디자인</td>
+                        <td>milpage dd_interaction_human</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="177"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_gray_btn" type="button" original-title="페이지 또는 포스트에 숏코드를 등록 하셔야 교과과정표 보기를 하실 수 있습니다." style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>150</td>
+                        <td>애니메이션프로듀서</td>
+                        <td>milpage df_ani_producer</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="150"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_gray_btn" type="button" original-title="페이지 또는 포스트에 숏코드를 등록 하셔야 교과과정표 보기를 하실 수 있습니다." style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>149</td>
+                        <td>CG아티스트</td>
+                        <td>milpage df_cg_artist</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="149"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/cg%ec%95%84%ed%8b%b0%ec%8a%a4%ed%8a%b8/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>148</td>
+                        <td>테크니컬 디렉터</td>
+                        <td>milpage df_effect_director</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="148"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/%ed%85%8c%ed%81%ac%eb%8b%88%ec%bb%ac-%eb%94%94%eb%a0%89%ed%84%b0/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>146</td>
+                        <td>편집</td>
+                        <td>milpage df_editing_director</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="146"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_gray_btn" type="button" original-title="페이지 또는 포스트에 숏코드를 등록 하셔야 교과과정표 보기를 하실 수 있습니다." style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>145</td>
+                        <td>영상프로듀서</td>
+                        <td>milpage df_producer</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="145"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/%ec%98%81%ec%83%81%ed%94%84%eb%a1%9c%eb%93%80%ec%84%9c/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>144</td>
+                        <td>사용자인터페이스(UI)디자인</td>
+                        <td>milpage dd_ux_design</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="144"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/%ec%82%ac%ec%9a%a9%ec%9e%90%ec%9d%b8%ed%84%b0%ed%8e%98%ec%9d%b4%ec%8a%a4ui%eb%94%94%ec%9e%90%ec%9d%b8/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>142</td>
+                        <td>사운드디자이너</td>
+                        <td>milpage gm_sound_designer</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="142"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/%ec%82%ac%ec%9a%b4%eb%93%9c%eb%94%94%ec%9e%90%ec%9d%b4%eb%84%88/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>140</td>
+                        <td>컨셉아티스트</td>
+                        <td>milpage gm_concept_artist</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="140"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_gray_btn" type="button" original-title="페이지 또는 포스트에 숏코드를 등록 하셔야 교과과정표 보기를 하실 수 있습니다." style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>135</td>
+                        <td>게임프로듀서</td>
+                        <td>milpage gm_producer</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="135"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/%ea%b2%8c%ec%9e%84%ed%94%84%eb%a1%9c%eb%93%80%ec%84%9c/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>134</td>
+                        <td>게임그래픽디자인</td>
+                        <td>milpage gm_graphic_designer</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="134"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_gray_btn" type="button" original-title="페이지 또는 포스트에 숏코드를 등록 하셔야 교과과정표 보기를 하실 수 있습니다." style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>133</td>
+                        <td>Game</td>
+                        <td>milpage mc_game</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="133"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/game/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>132</td>
+                        <td>Convergence Technology</td>
+                        <td>milpage mc_convergence_tech</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="132"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/convergence-technology/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>131</td>
+                        <td>IT Programming</td>
+                        <td>milpage mc_it_programming</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="131"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/it-programming/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>130</td>
+                        <td>Digital Design</td>
+                        <td>milpage mc_digital_design</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="130"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/digital-design/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>129</td>
+                        <td>Digital Film</td>
+                        <td>milpage mc_digital_film</td>
+                        <td>
+                           <input type="radio" id="Track" name="TrackOrJobs" value="Track"><label for="Track">Track</label>
+                           <input type="radio" id="Jobs" name="TrackOrJobs" value="Jobs"><label for="Jobs">Jobs</label>
+                        </td>
+                        <td>
+                           <button class="mil_btn mil_blue_btn" type="button" onclick="open_pop_subject();" style="cursor: pointer;">과목등록</button>
+                           <button class="mil_btn mil_green_btn" type="button" onclick="open_pop_modify();" style="cursor: pointer;">페이지 수정</button>
+                           <button class="mil_btn mil_red_btn mil_page_remove_btn" type="button" data="129"  style="cursor: pointer;">삭제</button>
+                           <button class="mil_btn mil_yellow_btn" target="_blank"  type="button" href="http://media-jobs.ajou.ac.kr/wordpress/digital-film/" original-title="교과과정표 보기" style="cursor: pointer;">페이지 보기</button>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            
 
             <div class="Modal Modal_add" id="Modal_add">
                <div class="page">
@@ -351,5 +939,37 @@
          <a href="mentor.html"><div class="menu4"><p>멘토관리</p></div></a>
          <a href="mail.html"><div class="menu5"><p>전체메일발송</p></div></a>
       </div>
-</body>
+      
+      <script type="text/javascript">
+         (function ($) {
+             $(document).ajaxSend(function (event, jqxhr, settings) {
+                 if (settings.url &&
+                     -1 < settings.url.indexOf('admin-ajax.php') &&
+                     ! ( settings.url.indexOf( '_fs_blog_admin' ) > 0 )
+                 ) {
+                     if (settings.url.indexOf('?') > 0) {
+                         settings.url += '&';
+                     } else {
+                         settings.url += '?';
+                     }
+
+                     settings.url += '_fs_blog_admin=true';
+
+                 }
+             });
+         })(jQuery);
+      </script>
+      <script type="text/javascript">
+         (function ($) {
+             $('.fs-submenu-item.wp-support-forum').parent().attr('target', '_blank');
+         })(jQuery);
+     </script>
+     <script type='text/javascript'>
+      /* <![CDATA[ */
+      var commonL10n = {"warnDelete":"\uc774\ub4e4 \uc544\uc774\ud15c\uc744 \uc601\uad6c\uc801\uc73c\ub85c \uc0ad\uc81c\ud558\ub824\uace0 \ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n  \uc911\uc9c0\ud558\ub824\uba74 '\ucde8\uc18c'\ub97c, \uc0ad\uc81c\ub294 'OK'.","dismiss":"\uc774 \uc54c\ub9bc \ubb34\uc2dc\ud558\uae30."};var heartbeatSettings = {"nonce":"db69962c6b"};var authcheckL10n = {"beforeunload":"\uc138\uc158\uc774 \ub9cc\ub8cc\ub410\uc2b5\ub2c8\ub2e4. \uc774 \ud398\uc774\uc9c0\uc5d0\uc11c \ub2e4\uc2dc \ub85c\uadf8\uc778\ud558\uac70\ub098 \ub85c\uadf8\uc778 \ud398\uc774\uc9c0\ub85c \uc774\ub3d9\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.","interval":"180"};/* ]]> */
+      </script>
+      <script type='text/javascript' src='http://media-jobs.ajou.ac.kr/wordpress/wp-admin/load-scripts.php?c=0&amp;load%5B%5D=hoverIntent,common,admin-bar,svg-painter,heartbeat,wp-auth-check&amp;ver=4.6'></script>
+      <script type="text/javascript">if(typeof wpOnload=='function')wpOnload();</script>      
+   
+   </body>
 </html>
