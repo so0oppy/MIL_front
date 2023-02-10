@@ -145,25 +145,6 @@ input{
     color: #A4A4A4;
 }
 
-.column{
-    width: 46.5%;
-    display: flex; 
-    flex-direction: column;
-}
-.description{
-    height: 16px;
-    padding-left: 50px;
-
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 0.25rem;
-    line-height: 0rem;
-    display: flex;
-    align-items: center;
-    color: #A4A4A4;
-}
-
 .create_mentor_button{
     font-family: 'Noto Sans KR';
     font-style: normal;

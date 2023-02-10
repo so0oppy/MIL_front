@@ -20,14 +20,58 @@
     </head>
     <!-- <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>   -->
     <body>
-       
-       <div class="main_contents">
-          <p class="main_contents_title">전체메일발송</p>
-          <div class="content_box">
-              <p class="content_box_title">미디어콘텐츠 전체메일발송</p>
-              
-           </div>
-        </div>
+      <div class="setting_mailing_wrap">
+         <p class="form_title">전체메일발송</p>
+         <div id="setting_mailing">
+            <p class="form_subtitle">전체 메일 발송 Tab</p>
+            </br></br>
+            <form id="mailing_form">
+               <input type="hidden" name="track" value="" />
+               <div class="row">
+                  <span class="input-addon">제목</span>
+                  <input
+                     type="text"
+                     class="input-text input-addon-select"
+                     name="mail_subject"
+                     placeholder="메일 제목을 입력하세요"
+                     value=""
+                  />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span class="highlight" style="font-size: 0.7rem; color: #3462dc">※추가로 붙는 것 없음 <span style="font-size: 0.1rem; color: black">(ex.[MIL], [공지] 등)</span></span>
+                  <br><br>
+               </div>
+   
+               <br />
+   
+               <div class="row">
+                  <span class="input-addon">받는 사람</span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <select id="set_mailing_target" class="select-addon" name="mailing_target">
+                     <option disabled selected value>회원그룹 선택</option>
+                     <option value="students">학생 그룹</option>
+                     <option value="mentors">멘토 그룹</option>
+                     </select>
+               </div>
+
+               <br />
+               
+               <div class="row">
+                  <span class="input-addon" style="margin-top: -80px">내용</span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <textarea 
+                     rows="8" 
+                     cols="50" 
+                     class="input-textarea" 
+                     name="mailing_contents" 
+                     placeholder="메일 내용을 입력하세요.">
+                  </textarea>     
+               </div>   
+
+               </br></br>
+               <button type='button' class='mailing_button'>메일 발송하기</button>
+            </form>
+         </div>
+      </div>
 
         <div class="left_menu">
          <div class="mil_logo">
