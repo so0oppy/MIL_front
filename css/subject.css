@@ -101,7 +101,7 @@ body,html{
     margin-top: 35px;
  }
  
- #mil_subject_table td{
+ #mil_subject_table tbody td{
     position: relative;
     width: 130px;
     height: 30px;
@@ -132,7 +132,6 @@ body,html{
 
 /*----------------------------------------------------*/
 .setting_block_right{
-    /* 흰 바탕 */
     position: relative;
     top: 10%;
     left: 6.5%;
