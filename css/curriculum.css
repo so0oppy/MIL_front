@@ -641,23 +641,24 @@ th,td{
 
 /*-----------------과목등록 Modal--------------------*/
 
-.Modal_subject .page{
+#Modal_subject .setting_block{
    /* 팝업창-흰색 */
    width: 85%;
    height: 80%;
-   padding: 1% 2% 1% 2%;
+   padding: 3% 2% 1% 3%;
    margin: 4% auto auto 5%;
-   justify-content: center;
-   align-items: center;
+   justify-content: left;
+   align-items: left;
    background-color: #FFFFFF;
    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
    border-radius: 10px;
+   overflow: auto;
 }
-.Modal_subject .page .title{
+#Modal_subject .setting_block .setting_title{
    height: 15px;
    margin-top: 25px;
 }
-.Modal_subject .page .subtitle{
+#Modal_subject .setting_block .subtitle{
    font-family: 'Noto Sans KR';
    font-style: normal;
    font-weight: 400;
@@ -666,18 +667,15 @@ th,td{
    align-items: center;
    color: #A4A4A4;
 }
-.Modal_subject .page .subject-list table{
-   width: 90%;
-   height: 80%;
+#mil_subject_table{
+   width: 100%;
    /* margin-left: -3.5%; */
-   margin-top: 2%;
+   margin-top: 35px;
 }
-.Modal_subject .page .subject-list table tr th{
+#mil_subject_table thead{
    width: 102px;
    height: 20px;
    background: #F4F4F4;
-}
-.Modal_subject .page .subject-list .class_mark{
    font-family: 'Noto Sans KR';
    font-style: normal;
    font-weight: 400;
@@ -686,31 +684,47 @@ th,td{
    text-align: center;
    color: #000000;
 }
-.Modal_subject .page .subject-list table tr td{
+
+#mil_subject_table tbody{
    width: 130px;
    height: 30px;
    border: 0.931223px solid #C2C2C2;
    border-radius: 3.72489px;
-}
-.Modal_subject .page .subject-list table tr td span{
    font-family: 'Noto Sans KR';
    font-style: normal;
    font-weight: 400;
    font-size: 0.2rem;
-   line-height: 10%;
+   line-height: -1rem;
    align-items: center;
    text-align: center;
    color: #000000;
 }
 
+#mil_subject_table tbody td{
+   box-sizing: border-box;
+    border: 0.931223px solid #C2C2C2;
+    border-radius: 3.72489px;
+    cursor: pointer;
+}
+
+#mil_subject_table span{
+   font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.2rem;
+    line-height: 0rem;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
 
 /*-----------------------------------------*/
-.Modal_subject .page .subject-type{
+.regidit_subject-type{
    display: flex;
    flex-direction: column;
    justify-content: center;
 }
-.Modal_subject .page .subject-type .title{
+.regidit_subject-type .setting_title{
    font-family: 'Noto Sans KR';
    font-style: normal;
    font-weight: 400;
@@ -719,7 +733,7 @@ th,td{
    align-items: center;
    color: #000000;
 }
-.Modal_subject .page .subject-type #Core{
+.regidit_subject-type input{
    font-family: 'Noto Sans';
    font-style: normal;
    font-weight: 400;
@@ -727,4 +741,9 @@ th,td{
    line-height: 2rem;
    align-items: top;
    color: #000000;
+}
+
+.regidit_subject-type button{
+   margin-bottom: 5px;
+   padding: 3px;
 }
