@@ -79,7 +79,8 @@
                     <p>가입자 수</p>
                     <p id="number">2,481</p>
                     <p id="today-number">(12)</p>
-
+                    <div class="card-body"><canvas id="myAreaChart" width="100%" height="70"></canvas></div>
+                            <!-- <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div> -->
                 </div>
                 <div class="mentor">
                     <p>멘토 수</p>
@@ -161,33 +162,11 @@
             <a href="mail.html"><div class="menu5"><p>전체메일발송</p></div></a>
         </div>
 
-        <script type="text/javascript">
-            (function ($) {
-                $(document).ajaxSend(function (event, jqxhr, settings) {
-                    if (settings.url &&
-                        -1 < settings.url.indexOf('admin-ajax.php') &&
-                        ! ( settings.url.indexOf( '_fs_blog_admin' ) > 0 )
-                    ) {
-                    if (settings.url.indexOf('?') > 0) {
-                        settings.url += '&';
-                    } else {
-                        settings.url += '?';
-                    }
-
-                    settings.url += '_fs_blog_admin=true';
-                    }
-                });
-            })(jQuery);
-        </script>
-        <script type="text/javascript">
-            (function ($) {
-                $('.fs-submenu-item.wp-support-forum').parent().attr('target', '_blank');
-            })(jQuery);
-        </script>
-        <script type='text/javascript'>
-            /* <![CDATA[ */
-            var commonL10n = {"warnDelete":"\uc774\ub4e4 \uc544\uc774\ud15c\uc744 \uc601\uad6c\uc801\uc73c\ub85c \uc0ad\uc81c\ud558\ub824\uace0 \ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n  \uc911\uc9c0\ud558\ub824\uba74 '\ucde8\uc18c'\ub97c, \uc0ad\uc81c\ub294 'OK'.","dismiss":"\uc774 \uc54c\ub9bc \ubb34\uc2dc\ud558\uae30."};var heartbeatSettings = {"nonce":"04d416c604"};var authcheckL10n = {"beforeunload":"\uc138\uc158\uc774 \ub9cc\ub8cc\ub410\uc2b5\ub2c8\ub2e4. \uc774 \ud398\uc774\uc9c0\uc5d0\uc11c \ub2e4\uc2dc \ub85c\uadf8\uc778\ud558\uac70\ub098 \ub85c\uadf8\uc778 \ud398\uc774\uc9c0\ub85c \uc774\ub3d9\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.","interval":"180"};/* ]]> */
-        </script>
-        <script type='text/javascript' src='http://media-jobs.ajou.ac.kr/wordpress/wp-admin/load-scripts.php?c=0&amp;load%5B%5D=hoverIntent,common,admin-bar,svg-painter,heartbeat,wp-auth-check&amp;ver=4.6'></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="assets/demo/chart-pie-demo.js"></script>    
     </body>
 </html>
